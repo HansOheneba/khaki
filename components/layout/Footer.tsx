@@ -7,7 +7,12 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-6 py-10 grid gap-10 md:grid-cols-4">
         {/* Brand */}
         <div>
-          <Image src="/logo.png" alt="KhakiConsult Logo" width={150} height={40} />
+          <Image
+            src="/logo.png"
+            alt="KhakiConsult Logo"
+            width={150}
+            height={40}
+          />
           <p className="text-sm text-gray-600">
             Trusted China product sourcing experts. We help businesses import
             quality products from China with verified suppliers and door-to-door
@@ -70,19 +75,19 @@ export default function Footer() {
           <p className="text-sm text-gray-600">
             Email:{" "}
             <a
-              href="mailto:info@khakiconsult.com"
+              href="mailto:khakiconsult@gmail.com"
               className="underline hover:text-blue-600"
             >
-              info@khakiconsult.com
+              khakiconsult@gmail.com
             </a>
           </p>
           <p className="text-sm text-gray-600">
             Phone:{" "}
             <a
-              href="tel:+233000000000"
+              href="tel:+8615851872192"
               className="underline hover:text-blue-600"
             >
-              +233 000 000 000
+              +86 1585 1872 192
             </a>
           </p>
           <p className="text-sm text-gray-600 mt-2">
@@ -94,7 +99,6 @@ export default function Footer() {
 
       <div className="border-t py-4 text-center text-sm text-gray-600">
         © {new Date().getFullYear()} Khaki Consult — All rights reserved.
-        
       </div>
     </footer>
   );
