@@ -13,7 +13,7 @@ export default function Footer() {
             width={150}
             height={40}
           />
-          <p className="text-sm text-gray-600">
+          <p className="text-sm text-gray-600 mt-3">
             Trusted China product sourcing experts. We help businesses import
             quality products from China with verified suppliers and door-to-door
             delivery.
@@ -47,23 +47,18 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* Social */}
+        {/* Social (Instagram only) */}
         <div>
           <h3 className="font-semibold mb-3">Follow Us</h3>
           <ul className="flex flex-col gap-2 text-sm">
             <li>
-              <a href="#" target="_blank" className="hover:text-blue-600">
-                LinkedIn
-              </a>
-            </li>
-            <li>
-              <a href="#" target="_blank" className="hover:text-blue-600">
-                Twitter
-              </a>
-            </li>
-            <li>
-              <a href="#" target="_blank" className="hover:text-blue-600">
-                Facebook
+              <a
+                href="https://www.instagram.com/khakiautoparts"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-pink-600"
+              >
+                Instagram
               </a>
             </li>
           </ul>
@@ -89,10 +84,6 @@ export default function Footer() {
             >
               +86 1585 1872 192
             </a>
-          </p>
-          <p className="text-sm text-gray-600 mt-2">
-            Serving businesses globally from China sourcing to door-to-door
-            delivery.
           </p>
         </div>
       </div>
