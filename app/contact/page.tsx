@@ -119,7 +119,7 @@ export default function ContactPage() {
       <div className="md:hidden px-4 sm:px-6 py-8">
         <div className="relative h-64 rounded-xl overflow-hidden shadow-lg">
           <Image
-            src="/contact-hero.png"
+            src="/contact.jpg"
             alt="Team communication"
             fill
             className="object-cover"
