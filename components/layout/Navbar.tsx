@@ -19,12 +19,12 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="w-full fixed top-0 bg-black text-white shadow z-50">
+    <nav className="w-full fixed top-0 bg-white text-black shadow z-50">
       <div className="max-w-6xl mx-auto flex items-center justify-between p-5">
         {/* Logo */}
         <Link href="/">
           <Image
-            src="/logo-white.png"
+            src="/logo.png"
             alt="KhakiConsult Logo"
             width={100}
             height={40}
@@ -48,7 +48,7 @@ export default function Navbar() {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-white"
+          className="md:hidden text-black"
           onClick={() => setOpen((prev) => !prev)}
         >
           {open ? <X size={26} /> : <Menu size={26} />}
@@ -63,7 +63,7 @@ export default function Navbar() {
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="md:hidden bg-black border-t overflow-hidden"
+            className="md:hidden bg-white border-t overflow-hidden"
           >
             <div className="flex flex-col px-4 py-8 space-y-3">
               {navLinks.map((link) => (
@@ -71,7 +71,7 @@ export default function Navbar() {
                   key={link.name}
                   href={link.href}
                   onClick={() => setOpen(false)}
-                  className={`text-white transition hover:text-[#c7a676] font-medium ${
+                  className={`text-black transition hover:text-[#c7a676] font-medium ${
                     pathname === link.href ? "underline underline-offset-4" : ""
                   }`}
                 >
