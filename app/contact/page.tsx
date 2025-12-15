@@ -1,33 +1,41 @@
 "use client";
 
-import { Mail, Phone, MessageCircleMore } from "lucide-react";
+import { Mail, Phone, MessageCircleMore, Instagram } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function ContactPage() {
-  const contacts = [
-    {
-      icon: MessageCircleMore,
-      title: "WhatsApp",
-      value: "+86 1585 1872 192",
-      link: "https://wa.me/8615851872192",
-      color: "from-green-400 to-green-600",
-    },
-    {
-      icon: Phone,
-      title: "Call Us",
-      value: "+86 1585 1872 192",
-      link: "tel:+8615851872192",
-      color: "from-blue-400 to-blue-600",
-    },
-    {
-      icon: Mail,
-      title: "Email",
-      value: "khakiconsult@gmail.com",
-      link: "mailto:khakiconsult@gmail.com",
-      color: "from-orange-400 to-orange-600",
-    },
-  ];
+ const contacts = [
+   {
+     icon: MessageCircleMore,
+     title: "WhatsApp",
+     value: "+86 1585 1872 192",
+     link: "https://wa.me/8615851872192",
+     color: "from-green-400 to-green-600",
+   },
+   {
+     icon: Phone,
+     title: "Call Us",
+     value: "+86 1585 1872 192",
+     link: "tel:+8615851872192",
+     color: "from-blue-400 to-blue-600",
+   },
+   {
+     icon: Mail,
+     title: "Email",
+     value: "khakiconsult@gmail.com",
+     link: "mailto:khakiconsult@gmail.com",
+     color: "from-orange-400 to-orange-600",
+   },
+   {
+     icon: Instagram,
+     title: "Instagram",
+     value: "@khakiautoparts",
+     link: "https://www.instagram.com/khakiautoparts",
+     color: "from-pink-500 via-purple-500 to-orange-500",
+   },
+ ];
+
 
   return (
     <div className="min-h-screen bg-background text-foreground">
